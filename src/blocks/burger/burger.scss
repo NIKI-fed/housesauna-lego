@@ -1,0 +1,44 @@
+.burger {
+  width: 40px;
+  height: 40px;
+  content: "";
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.burger__element {
+  width: 20px;
+  height: 2px;
+  content: "";
+  background-color: white;
+  position: relative;
+}
+
+.burger__element::before,
+.burger__element::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 2px;
+  content: "";
+  background-color: white;
+  top: -7px;
+}
+
+.burger__element::after {
+  top: 7px;
+}
+
+.burger__element--close {
+  transform: rotate(45deg);
+}
+
+.burger__element--close::before {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+.burger__element--close::after {
+  display: none;
+}
