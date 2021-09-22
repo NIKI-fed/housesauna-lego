@@ -1,0 +1,29 @@
+.social {
+  display: flex;
+  padding-inline-end: $padding-mobile;
+  padding-inline-start: $padding-mobile;
+  height: 40px;
+  align-items: center;
+}
+
+.social__item {
+  width: 30px;
+  height: 30px;
+  content: "";
+  background-color: $base-white;
+  border-radius: 5px;
+  display: block;
+  color: transparent;
+  margin-inline-end: 8px;
+  background-image: url(/img/facebook.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social__item--yt {
+  background-image: url(/img/youtube.svg);
+}
+
+.social__item--insta {
+  background-image: url(/img/instagram.svg);
+}

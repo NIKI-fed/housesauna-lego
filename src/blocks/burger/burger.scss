@@ -13,6 +13,9 @@
   content: "";
   background-color: white;
   position: relative;
+  transition-property: all;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
 }
 
 .burger__element::before,
@@ -24,6 +27,9 @@
   content: "";
   background-color: white;
   top: -7px;
+  transition-property: all;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
 }
 
 .burger__element::after {
@@ -40,5 +46,5 @@
 }
 
 .burger__element--close::after {
-  display: none;
+  opacity: 0;
 }

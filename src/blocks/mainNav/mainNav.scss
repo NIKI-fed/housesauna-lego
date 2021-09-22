@@ -1,0 +1,27 @@
+.mainNav {
+  display: none;
+  // display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 67px);
+  width: 210px;
+  background-color: $base-black;
+}
+
+.mainNav--open {
+  display: flex;
+}
+
+.mainNav__list {
+  list-style: none;
+  padding-inline-start: $padding-mobile;
+  margin-block-end: auto;
+}
+
+.mainNav__link {
+  color: $base-white;
+  text-decoration: none;
+  font-weight: 400;
+  padding-block-end: 5px;
+  padding-block-start: 5px;
+  display: block;
+}
