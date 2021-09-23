@@ -41,14 +41,18 @@ const style = () => {
 };
 
 const scripts = () => {
-  return src('src/js/*.js')
+  return src([
+    'src/js/*.js',
+    'src/blocks/**/*.js'
+  ])
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(rollup({}, {
       format:'iife'
     }))
     .pipe(sourcemaps.write(''))
-    .pipe(dest('dist/js'));
+    .pipe(dest('dist/js'))
+    .pipe(server.stream());
 };
 
 const copy = () => {
@@ -69,7 +73,7 @@ const copyHtml = () => {
 
 const copyImages = () => {
   return src('src/img/**/*.{jpg,jpeg,png,svg}')
-    .pipe(dest('dist/img/'))
+    .pipe(dest('dist/img'))
     .pipe(server.stream());
 };
 
@@ -93,12 +97,6 @@ const copyFonts = () =>{
     .pipe(dest('dist'));
 };
 
-const jsWatch = () => {
-  scripts();
-  server.reload();
-  done();
-};
-
 const build = () => {
   start('copy');
 };
@@ -112,9 +110,9 @@ const serve = () => {
     ui: false
   });
 
-  watch(['src/scss/**/*.scss','src/scss/*.scss', 'src/scss/style.scss'], style).on('change', server.reload);
+  watch(['src/scss/**/*.scss','src/scss/*.scss', 'src/scss/style.scss', 'src/blocks/**/*.scss'], style).on('change', server.reload);
   watch('src/*.html', copyHtml).on('change', server.reload);
-  watch('src/js/**/*.js', jsWatch);
+  watch(['src/js/**/*.js', 'src/blocks/**/*.js'], scripts).on('change', server.reload);
 
   watch('*.html').on('change', server.reload);
 };

@@ -71,7 +71,7 @@ body {
   overflow: visible;
 
   @media (min-width: $width-tablet-album) {
-    fill: $main-bg-color;
+    fill: $base-white;
   }
 }
 
@@ -86,7 +86,7 @@ body {
   width: 160px;
   margin: 0 auto;
   height: 2px;
-  background-color: $main-bg-color;
+  background-color: $base-white;
 }
 
 .container {
@@ -122,7 +122,7 @@ body {
   position: absolute;
   width: 80px;
   height: 30px;
-  background-color: $main-bg-color;
+  background-color: $base-white;
   top: 170px;
   right: 10px;
   border-radius: 15px;
