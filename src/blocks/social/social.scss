@@ -4,6 +4,11 @@
   padding-inline-start: $padding-mobile;
   height: 40px;
   align-items: center;
+  
+  @media (min-width: $width-tablet-album) {
+    height: 80px;
+    order: 1;
+  }
 }
 
 .social__item {
@@ -18,6 +23,11 @@
   background-image: url(/img/facebook.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.social__item:hover,
+.social__item:focus {
+  background-color: $base-white-alpha;
 }
 
 .social__item--yt {

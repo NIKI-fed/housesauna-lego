@@ -1,3 +1,7 @@
 .pageMain {
   margin-block-start: 70px;
+
+  @media (min-width: $width-tablet-album) {
+    margin-block-start: 100px;
+  }
 }

@@ -3,6 +3,11 @@
   position: fixed;
   width: 100%;
   z-index: 10;
+  
+  @media (min-width: $width-tablet-album) {
+    display: flex;
+    background-color: $base-black;
+  }
 }
 
 .pageHeader__logoWrapper {
@@ -14,11 +19,19 @@
   padding-block-end: 10px;
   padding-inline-start: 5px;
   padding-inline-end: $padding-mobile;
+
+  @media (min-width: $width-tablet-album) {
+    display: none;
+  }
+}
+
+.pageHeader__logoLink {
+  justify-self: center;
+  margin-inline-end: 30px;
 }
 
 .pageHeader__logo {
-  justify-self: center;
-  margin-inline-end: 30px;
+
 }
 
 .pageHeader__contacts {
@@ -46,4 +59,16 @@
   display: grid;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $width-tablet-album) {
+    border: none;
+    padding-inline-end: 0;
+    padding-inline-start: 0;
+    height: 20px;
+  }
+}
+
+.pageHeader__phone:hover,
+.pageHeader__phone:focus {
+  color: $base-white-alpha;
 }
