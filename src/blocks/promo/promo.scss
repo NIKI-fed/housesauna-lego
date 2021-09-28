@@ -1,0 +1,60 @@
+.promo {
+    display: grid;
+    background-color: $base-black;
+    background-image: linear-gradient(to right, $base-black-alpha, $base-black-alpha),
+    url(/img/main-promo-house.jpg);
+    background-repeat: no-repeat,
+    no-repeat;
+    background-position: right,
+    center;
+
+    width: 100%;
+    min-height: calc(100vh - 75px);
+    height: 100%;
+}
+
+.promo__promoWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    
+    color: $base-white;
+    text-align: center;
+
+    padding-block-start: 10px;
+    padding-block-end: 10px;
+    padding-inline-start: $padding-mobile;
+    padding-inline-end: $padding-mobile;
+
+    min-height: 375px;
+    margin-block-start: $break-small;
+    margin-block-end: $break;
+}
+
+
+.promo__text {
+    color: $base-white;
+    text-align: center;
+
+    margin-block-end: $break-small;
+}
+
+.promo__heading {
+    // margin-block-start: auto;
+    margin-block-end: $gap-big-corner;
+
+    color: $base-white;
+    
+}
+
+.promo__buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $gap-2-mobile;
+
+    margin-block-start: $gap-2-mobile;
+    // margin-block-end: auto;   
+}
+
