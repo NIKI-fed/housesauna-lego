@@ -8,6 +8,10 @@
     width: 100%;
     min-height: calc(100vh - 75px);
     height: 100%;
+
+    @media (min-width: $width-tablet-album) {
+        min-height: calc(100vh - 80px);
+    }
 }
 
 .promo__promoWrapper {
@@ -40,6 +44,11 @@
         margin-block-start: $gap-mobile;
         margin-block-end: $gap-mobile;
     }
+
+    @media (min-width: $width-tablet) {
+        margin-block-start: $gap-tablet;
+        margin-block-end: $gap-tablet;
+    }
 }
 
 .promo__text {
@@ -50,6 +59,10 @@
     @media (min-width: $width-mobile-album) {
         margin-block-end: $break-x-small;
     }
+
+    @media (min-width: $width-tablet) {
+        margin-block-end: $gap-2-tablet;
+    }
 }
 
 .promo__buttons {
@@ -57,5 +70,9 @@
     grid-template-columns: 1fr 1fr;
     gap: $gap-2-mobile;
     margin-block-start: $gap-2-mobile;  
+
+    @media (min-width: $width-tablet) {
+        margin-block-start: $break-big;
+    }
 }
 
