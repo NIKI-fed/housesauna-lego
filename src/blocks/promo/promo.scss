@@ -68,7 +68,7 @@
 .promo__buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: $gap-2-mobile;
+    gap: $gap-3-mobile;
     margin-block-start: $gap-2-mobile;  
 
     @media (min-width: $width-tablet) {
