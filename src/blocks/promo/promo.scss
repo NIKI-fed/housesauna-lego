@@ -20,7 +20,6 @@
     align-items: center;
     justify-content: center;
       
-    color: $base-white;
     text-align: center;
 
     padding-block-start: 10px;
@@ -38,8 +37,7 @@
 
 .promo__heading {
     margin-block-end: $gap-3-mobile;
-    color: $base-white;
-
+    
     @media (min-width: $width-mobile-album) {
         margin-block-start: $gap-mobile;
         margin-block-end: $gap-mobile;
@@ -52,7 +50,6 @@
 }
 
 .promo__text {
-    color: $base-white;
     text-align: center;
     margin-block-end: $break-small;
 
