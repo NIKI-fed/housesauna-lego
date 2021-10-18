@@ -207,6 +207,14 @@
   background-color: $base-dark;
 }
 
+.heading--uppercase {
+  text-transform: uppercase;
+}
+
+.heading--white {
+  color: $base-white;
+}
+
 .heading__right {
   position: relative;
 }
@@ -231,3 +239,4 @@
     left: -5px;
   }
 }
+
