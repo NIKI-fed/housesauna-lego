@@ -1,7 +1,7 @@
 .promo {
     display: grid;
     background-color: $base-black;
-    background-image: url(/img/main-promo-house.jpg);
+    background-image: url('../img/main-promo-house.jpg');
     background-repeat: no-repeat;
     background-position: top center;
 
@@ -18,10 +18,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-      
+    justify-content: center;  
     text-align: center;
-
     padding-block-start: 10px;
     padding-block-end: 10px;
     padding-inline-start: $padding-mobile;
@@ -72,4 +70,3 @@
         margin-block-start: $break-big;
     }
 }
-
