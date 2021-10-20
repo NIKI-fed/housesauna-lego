@@ -274,6 +274,10 @@
   color: $base-white;
 }
 
+.text--transparent {
+  opacity: .5;
+}
+
 .text__link {
   outline: none;
   text-decoration: none;
