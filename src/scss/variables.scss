@@ -59,16 +59,7 @@ $h6-desktop-font: 16px;
 $h6-desktop-line: 26px;
 
 
-// NEW COLORS
-$base-blue: #2e75e6;
-$base-blue-alpha: #2e75e680;
-$base-blue-alpha-33: #2e75e633;
-$base-dark-blue: #1f62cc;
-$base-darker-blue: #1d3e73;
-$base-darker-blue-alpha: #1d3e7380;
-$base-light-blue: #bad9fa;
-$base-sky-blue: #eaf3fe;
-$base-sky-blue-80: #eaf3fe80;
+// COLORS
 
 $base-wrong: #FFEEED;
 $base-wrong-dark-33: #CC433D33;
@@ -87,30 +78,8 @@ $base-action-hover-color: #ffe32e;
 $base-action-brown: #665533;
 $base-action-brown-alpha-3: #66553330;
 
-$base-gradient-light: #80d5ff;
-$base-gradient-dark: #2e75e6;
-
 $cookies-bg: #8298B7;
 $cookies-shadow: 0px 10px 10px #2E75E633;
-
-$news-bg: #1d3e73;
-$news-color: #80C6FF;
-$news-shadow: 0px 10px 10px #2E75E633;
-
-$alt-gradient-start-alpha: 0;
-$alt-gradient-middle-alpha: 40;
-$alt-gradient-end-alpha: 50;
-
-$alt-gradient: transparent
-  linear-gradient(
-    180deg,
-    #1f62cc 0%,
-    #1f62cc 15%,
-    #1f62cc66 45%,
-    #1f62cc0d 75%,
-    #1f62cc00 100%
-  )
-  0% 0% no-repeat padding-box;
 
 $additional-red: #ff564e;
 $additional-green: #38c976;
