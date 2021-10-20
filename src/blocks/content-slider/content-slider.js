@@ -3,8 +3,8 @@ const sliderElement = document.querySelector(`.content-slider`);
 let sliderWrapper = sliderElement.querySelector(`.content-slider__wrapper`);
 let sliderItems = sliderElement.querySelectorAll(`.content-slider__item`);
 let sliderControls = sliderElement.querySelectorAll(`.content-slider__control`);
-let sliderControlLeft = sliderElement.querySelector(`.content-slider__control_left`);
-let sliderControlRight = sliderElement.querySelector(`.content-slider__control_right`);
+let sliderControlLeft = sliderElement.querySelector(`.content-slider__control-left`);
+let sliderControlRight = sliderElement.querySelector(`.content-slider__control-right`);
 let sliderBullets = sliderElement.querySelectorAll(`.content-slider__bullet`);
 let wrapperWidth = parseFloat(getComputedStyle(sliderWrapper).width);
 let itemWidth = parseFloat(getComputedStyle(sliderItems[0]).width);
@@ -122,8 +122,8 @@ const cycle = (direction) => {
 const controlClick = (e) => {
   if (e.target.classList.contains(`content-slider__control`)) {
     e.preventDefault();
-    const direction = e.target.classList.contains(`content-slider__control_right`) ? `right` : `left`;
-    transformItem(direction);
+    const clickDirection = e.target.classList.contains(`content-slider__control-right`) ? `right` : `left`;
+    transformItem(clickDirection);
     clearInterval(sliderInterval);
     cycle(mainConfig.direction);
   }
@@ -144,8 +144,8 @@ const refresh = () => {
   sliderWrapper = sliderElement.querySelector(`.content-slider__wrapper`);
   sliderItems = sliderElement.querySelectorAll(`.content-slider__item`);
   sliderControls = sliderElement.querySelectorAll(`.content-slider__control`);
-  sliderControlLeft = sliderElement.querySelector(`.content-slider__control_left`);
-  sliderControlRight = sliderElement.querySelector(`.content-slider__control_right`);
+  sliderControlLeft = sliderElement.querySelector(`.content-slider__control-left`);
+  sliderControlRight = sliderElement.querySelector(`.content-slider__control-right`);
   sliderBullets = sliderElement.querySelectorAll(`.content-slider__bullet`);
   wrapperWidth = parseFloat(getComputedStyle(sliderWrapper).width);
   itemWidth = parseFloat(getComputedStyle(sliderItems[0]).width);
