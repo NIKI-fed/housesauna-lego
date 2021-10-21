@@ -215,28 +215,7 @@
   color: $base-white;
 }
 
-.heading__right {
-  position: relative;
-}
-
-.heading__right::before {
-  position: absolute;
-  content: "";
-  width: 110%;
-  height: 200%;
-  background: url("../img/contentSvg/img-right-blue.svg");
-  background-repeat: no-repeat;
-  top: -22px;
-  left: -3px;
-
-  @media (min-width: $width-tablet) {
-    top: -22px;
-    left: -3px;
-  }
-
-  @media (min-width: $width-tablet-album) {
-    top: -25px;
-    left: -5px;
-  }
+.heading--bold {
+  font-weight: bold;
 }
 

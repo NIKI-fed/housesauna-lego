@@ -45,11 +45,19 @@
 }
 
 .content-slider__control-left {
-  left: 0;
+  left: 20px;
+
+  @media (min-width: $width-tablet) {
+    left: 20px;
+  }
 }
 
 .content-slider__control-right {
-  right: 0;
+  right: 20px;
+
+  @media (min-width: $width-tablet) {
+    right: 20px;
+  }
 }
 
 .content-slider__control::before {

@@ -38,7 +38,14 @@
   width: 60px;
   height: 60px;
   padding: 10px;
+}
+
+.social__item--big:not(:last-of-type) {
   margin-inline-end: 32px;
+  
+  @media (min-width: $width-tablet) {
+    margin-inline-end: 32px;
+  }
 }
 
 .social__icon {
