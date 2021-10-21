@@ -1,7 +1,7 @@
 .pageHeader {
   background-color: $base-black-alpha;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 10;
   
   @media (min-width: $width-tablet-album) {

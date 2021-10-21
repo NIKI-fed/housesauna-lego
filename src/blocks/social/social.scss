@@ -14,15 +14,14 @@
 .social__item {
   width: 30px;
   height: 30px;
+  padding: 4px;
   content: "";
   background-color: $base-white;
   border-radius: 5px;
-  display: block;
+  display: flex;
+  justify-content: center;
   color: transparent;
   margin-inline-end: 8px;
-  background-image: url(/img/facebook.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .social__item:hover,
@@ -30,10 +29,27 @@
   background-color: $base-white-alpha;
 }
 
-.social__item--yt {
-  background-image: url(/img/youtube.svg);
+.social__item:hover .social__icon,
+.social__item:focus .social__icon {
+  fill: $base-black;
 }
 
-.social__item--insta {
-  background-image: url(/img/instagram.svg);
+.social__item--big {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+}
+
+.social__item--big:not(:last-of-type) {
+  margin-inline-end: 32px;
+  
+  @media (min-width: $width-tablet) {
+    margin-inline-end: 32px;
+  }
+}
+
+.social__icon {
+  width: 100%;
+  height: 100%;
+  fill: $base-darker;
 }

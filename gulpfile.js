@@ -82,7 +82,7 @@ const clean = () => {
 };
 
 const createSprite = () => {
-  return src('src/img/icon-*.svg')
+  return src('src/img/icons/icon-*.svg')
     .pipe(sprite())
     .pipe(rename('sprite.svg'))
     .pipe(dest('dist/img'));

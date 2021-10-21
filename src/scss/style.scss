@@ -1,6 +1,7 @@
 @import "variables.scss";
 @import "general.scss";
 
+@import "../blocks/pageBody/pageBody.scss";
 @import "../blocks/heading/heading.scss";
 @import "../blocks/text/text.scss";
 @import "../blocks/pageHeader/pageHeader.scss";
@@ -12,3 +13,4 @@
 @import "../blocks/logo/logo.scss";
 @import "../blocks/promo/promo.scss";
 @import "../blocks/button/button.scss";
+@import "../blocks/pageFooter/pageFooter.scss";

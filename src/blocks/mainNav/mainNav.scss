@@ -2,7 +2,8 @@
   display: none;
   // display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 67px);
+  min-height: calc(100vh - 75px);
+  padding-block-end: 120px;
   width: 210px;
   background-color: $base-black;
 
@@ -14,6 +15,7 @@
     max-width: $width-tablet-album-container;
     margin-inline-start: auto;
     margin-inline-end: auto;
+    padding-block-end: 0;
   }
 
   @media (min-width: $width-desktop) {
