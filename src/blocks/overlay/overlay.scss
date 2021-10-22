@@ -5,6 +5,7 @@
   background-color: $base-overlay;
   z-index: 50;
   display: none;
+  overflow: auto;
 }
 
 .overlay--visible {

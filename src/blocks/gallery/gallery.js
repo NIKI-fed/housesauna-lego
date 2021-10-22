@@ -1,29 +1,27 @@
 const gallery = document.querySelector(`.gallery`);
 const images = gallery.querySelectorAll(`.gallery__img`);
+
 const overlay = document.querySelector(`.overlay`);
+overlay.appendChild(gallery.cloneNode(true));
+
+const overlayGallery = overlay.querySelector(`.gallery`);
+overlayGallery.classList.add(`gallery--flex`);
+
+const overlayGalleryImages = overlayGallery.querySelectorAll(`.gallery__img`);
+overlayGalleryImages.forEach((img) => {
+  img.classList.add(`gallery__img--view`);
+});
 
 const openImg = (img, index) => {
   console.log(img.parentElement.childElementCount);
   overlay.classList.toggle(`overlay--visible`);
-  const newImg = img.cloneNode();
-  overlay.appendChild(newImg);
-  const overlayImg = overlay.querySelector(`.gallery__img`);
-  overlayImg.classList.toggle(`gallery__img--view`);
+  overlayGalleryImages[index].scrollIntoView();
   overlay.addEventListener(`click`, closeImg);
 };
 
 const closeImg = () => {
   overlay.classList.remove(`overlay--visible`);
   overlay.removeEventListener(`click`, closeImg);
-  overlay.innerHTML = ``;
-};
-
-const nextImg = () => {
-  // TODO
-};
-
-const prevImg = () => {
-  // TODO
 };
 
 images.forEach((img) => {

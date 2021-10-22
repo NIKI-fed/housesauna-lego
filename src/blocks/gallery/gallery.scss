@@ -11,6 +11,19 @@
   }
 }
 
+.gallery--flex {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  max-height: 95%;
+  margin-block-start: auto;
+  margin-block-end: auto;
+
+  @media (min-width: $width-tablet-album) {
+    max-height: 75%;
+  }
+}
+
 .gallery__img {
   width: 100%;
   height: auto;
@@ -32,10 +45,6 @@
   height: auto;
   max-width: 95%;
   max-height: 95%;
-  margin-inline-start: auto;
-  margin-inline-end: auto;
-  margin-block-start: auto;
-  margin-block-end: auto;
 
   @media (min-width: $width-tablet-album) {
     max-width: 75%;
