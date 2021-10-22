@@ -13,7 +13,6 @@ overlayGalleryImages.forEach((img) => {
 });
 
 const openImg = (img, index) => {
-  console.log(img.parentElement.childElementCount);
   overlay.classList.toggle(`overlay--visible`);
   overlayGalleryImages[index].scrollIntoView();
   overlay.addEventListener(`click`, closeImg);

@@ -6,6 +6,12 @@
   z-index: 50;
   display: none;
   overflow: auto;
+  overflow-x: scroll;
+}
+
+.overlay::-webkit-scrollbar:horizontal {
+  height: 11px;
+  appearance: slider-horizontal;
 }
 
 .overlay--visible {
