@@ -278,7 +278,7 @@
   outline: none;
   text-decoration: none;
   color: $base-dark;
-  background-image: linear-gradient(to right, #888888 100%, #888888 100%);
+  background-image: linear-gradient(to right, #88888888 100%, #88888888 100%);
   background-position: 0 1.05em;;
   background-repeat: repeat-x;
   background-size: 8px 1px;
@@ -298,6 +298,7 @@
     color: $base-black;
     background-image: linear-gradient(to right, #888888 100%, #888888 100%);
   }
+  
   &:focus,
   &:active {
     color: $base-black;
@@ -317,7 +318,7 @@
 
 .text__link--alt {
   color: $base-white;
-  background-image: linear-gradient(to right, #ffffff 100%, #ffffff 100%);
+  background-image: linear-gradient(to right, #ffffff88 100%, #ffffff88 100%);
 
   &:visited {
     color: $base-white-alpha;
