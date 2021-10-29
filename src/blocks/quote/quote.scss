@@ -1,17 +1,17 @@
 .quote {
-  display: grid;
-  background-color: $base-black;
-  background-image: url('../img/main-promo-house.jpg');
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-
+  display: flex;
+  flex-direction: column;
+  // display: grid;
+  // grid-template-columns: 1fr;
+  // gap: $gap-3-mobile;
+  background-color: $base-white;
   width: 100%;
-  min-height: calc(100vh - 75px);
-  height: 100%;
+  min-height: 50vh;
+  // height: 100%;
 
   @media (min-width: $width-tablet-album) {
-      min-height: calc(100vh - 80px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -27,9 +27,111 @@
   padding-inline-end: $padding-mobile;
   margin-block-start: $break-small;
   margin-block-end: $break;
+  // min-height: 500px;
+  position: relative;
 
   @media (min-width: $width-mobile-album) {
-      margin-block-start: $break-x-small;
-      margin-block-end: $break-x-small;
-    }
+    margin-block-start: $break-x-small;
+    // margin-block-end: $break-x-small;
+  }
+
+  @media (min-width: $width-tablet) {
+    margin-block-end: $break-big;
+    max-width: 75%;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+  }
+
+  @media (min-width: $width-tablet-album) {
+    max-width: 60%;
+  }
+
+  @media (min-width: $width-desktop) {
+    max-width: calc($width-desktop-container / 2 - 80px);
+    margin-inline-end: $break-x-small;
+  }
+}
+
+.quote__wrapper::before,
+.quote__wrapper::after {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.quote__wrapper::before {
+  background-image: url('../img/icons/icon-tick-open.svg');
+  top: -40px;
+  left: $gap-2-mobile;
+  
+  @media (min-width: $width-tablet) {
+    left: -40px;
+    top: 40px;
+  }
+  
+  @media (min-width: $width-tablet-album) {
+    top: 80px;
+  }
+}
+
+.quote__wrapper::after {
+  background-image: url('../img/icons/icon-tick-close.svg');
+  bottom: -40px;
+  right: $gap-2-mobile;
+  
+  @media (min-width: $width-tablet) {
+    right: -40px;
+  }
+  
+  @media (min-width: $width-tablet-album) {
+    bottom: 0;
+  }
+  
+  @media (min-width: $width-desktop) {
+    bottom: 40px;
+  }
+}
+
+.quote__subHeading {
+  font-size: 14px;
+  line-height: 18px;
+  margin-block-start: 0;
+  opacity: .6;
+}
+
+.quote__videoWrapper {
+  display: flex;
+  margin-block-start: auto;
+
+  @media (min-width: $width-tablet-album) {
+    max-width: 75%;
+    height: 100%;
+  }
+
+  @media (min-width: $width-desktop) {
+    max-width: 75%;
+    max-width: calc($width-desktop-container / 2 - 80px);
+    height: 100%;
+    margin-inline-start: $break-small;
+  }
+}
+
+.quote__video {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4 / 3;
+
+  @media (min-width: $width-tablet) {
+    aspect-ratio: 16 / 9;
+  }
+
+  @media (min-width: $width-tablet-album) {
+    margin-block-start: auto;
+    margin-block-end: auto;
+    height: auto;
+    border-radius: 5px;
+  }
 }
