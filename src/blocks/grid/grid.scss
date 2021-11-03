@@ -1,7 +1,7 @@
 .grid__article {
   display: grid;
   grid-template-columns: 1fr;
-  gap: $gap-2-mobile;
+  gap: $gap-tablet;
   width: 100%;
   max-width: $width-mobile-container;
   margin-inline-start: auto;
@@ -41,14 +41,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  // margin-block-end: 20px;
 }
 
-.grid__element--wide {
-  grid-column-start: 1;
-  grid-column-end: -1;
+.grid__element--marginBottom-medium {
   margin-block-end: 20px;
 
   @media (min-width: $width-tablet) {
     margin-block-end: 40px;
   }
+}
+
+.grid__element--wide {
+  grid-column-start: 1;
+  grid-column-end: -1;
 }
