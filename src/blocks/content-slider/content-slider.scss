@@ -1,7 +1,21 @@
 .content-slider {
   position: relative;
   overflow: hidden;
-  margin-block-start: $gap-2-tablet;
+  margin-block-start: $break-x-small;
+  margin-block-end: $break-x-small;
+
+  @media (min-width: $width-mobile-album) {
+  }
+
+  @media (min-width: $width-tablet) {
+    margin-block-start: $break-small;
+    margin-block-end: $break-small;
+  }
+
+  @media (min-width: $width-tablet-album) {
+    margin-block-start: $gap-2-mobile;
+    margin-block-end: $gap-2-mobile;
+  }
 }
 
 .content-slider__wrapper {

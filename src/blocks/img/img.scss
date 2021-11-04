@@ -1,0 +1,30 @@
+.img {
+  // width: 100%;
+  // height: auto;
+  overflow: hidden;
+}
+
+.img--preview {
+  // max-height: 200px;
+  border-radius: 10px;
+}
+
+.img__img--team {
+  width: 200px;
+  height: 200px;
+}
+
+.img--youtube {
+  width: 228px;
+  height: 160px;
+  filter: drop-shadow( 0px 4px 10px rgba(255, 0, 0, 0.25));
+}
+
+.img--youtube:hover,
+.img--youtube:focus {
+  filter: drop-shadow( 0px 10px 10px rgba(255, 0, 0, 0.5));
+}
+
+.img--youtube:active {
+  filter: drop-shadow( 0px 4px 10px rgba(255, 0, 0, 0.5));
+}
