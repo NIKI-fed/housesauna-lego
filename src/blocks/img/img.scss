@@ -1,5 +1,12 @@
 .img {
+  // width: 100%;
+  // height: auto;
+  overflow: hidden;
+}
 
+.img--preview {
+  // max-height: 200px;
+  border-radius: 10px;
 }
 
 .img__img--team {

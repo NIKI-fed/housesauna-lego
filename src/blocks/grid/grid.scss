@@ -1,3 +1,23 @@
+.grid {
+  margin-block-start: $break-x-small;
+  margin-block-end: $break-x-small;
+
+  @media (min-width: $width-tablet) {
+    margin-block-start: $break-small;
+    margin-block-end: $break-small;
+  }
+
+  @media (min-width: $width-tablet-album) {
+    margin-block-start: $break;
+    margin-block-end: $break;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-block-start: $break-big;
+    margin-block-end: $break-big;
+  }
+}
+
 .grid__article {
   display: grid;
   grid-template-columns: 1fr;
@@ -6,8 +26,8 @@
   max-width: $width-mobile-container;
   margin-inline-start: auto;
   margin-inline-end: auto;
-  margin-block-start: $break-x-small;
-  margin-block-end: $break-x-small;
+  // margin-block-start: $break-x-small;
+  // margin-block-end: $break-x-small;
 
   @media (min-width: $width-mobile-album) {
     grid-template-columns: 1fr 1fr;
@@ -17,23 +37,34 @@
   @media (min-width: $width-tablet) {
     gap: $gap-tablet;
     max-width: $width-tablet-container;
-    margin-block-start: $break-small;
-    margin-block-end: $break-small;
+    // margin-block-start: $break-small;
+    // margin-block-end: $break-small;
   }
 
   @media (min-width: $width-tablet-album) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: $gap-2-mobile;
     max-width: $width-tablet-album-container;
-    margin-block-start: $break;
-    margin-block-end: $break;
+    // margin-block-start: $break;
+    // margin-block-end: $break;
   }
 
   @media (min-width: $width-desktop) {
     gap: $gap-3-mobile;
     max-width: $width-desktop-container;
-    margin-block-start: $break-big;
-    margin-block-end: $break-big;
+    // margin-block-start: $break-big;
+    // margin-block-end: $break-big;
+  }
+}
+
+.grid__article--three {
+
+  @media (min-width: $width-tablet) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: $width-tablet-album) {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -41,7 +72,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // margin-block-end: 20px;
+  gap: 20px;
 }
 
 .grid__element--marginBottom-medium {
