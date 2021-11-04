@@ -13,13 +13,8 @@
   }
 
   @media (min-width: $width-tablet-album) {
-    margin-block-start: $break;
-    margin-block-end: $break;
-  }
-
-  @media (min-width: $width-desktop) {
-    margin-block-start: $break-big;
-    margin-block-end: $break-big;
+    margin-block-start: $gap-2-mobile;
+    margin-block-end: $gap-2-mobile;
   }
 }
 
