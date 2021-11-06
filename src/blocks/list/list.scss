@@ -1,9 +1,17 @@
 .list {
+  max-width: 740px;
   margin-block-start: 0;
   margin-block-end: 0;
 
   @media (min-width: $width-tablet) {
     padding-inline-start: $break-big;
+  }
+}
+
+.list--paddingLeft-small {
+
+  @media (min-width: $width-tablet) {
+    padding-inline-start: $break-x-small;
   }
 }
 

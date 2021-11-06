@@ -18,6 +18,21 @@
   }
 }
 
+.content-slider--top {
+  margin-block-start: 0;
+
+  @media (min-width: $width-mobile-album) {
+  }
+
+  @media (min-width: $width-tablet) {
+    margin-block-start: 0;
+  }
+
+  @media (min-width: $width-tablet-album) {
+    margin-block-start: 0;
+  }
+}
+
 .content-slider__wrapper {
   height: 100%;
   display: flex;
@@ -25,9 +40,39 @@
   transition: transform 0.6s ease;
 }
 
+.content-slider__wrapper--top {
+
+  @media (min-width: $width-tablet-album) {
+    max-height: 60vh;
+  }
+}
+
 .content-slider__item {
   flex: 0 0 100%;
   max-width: 100%;
+}
+
+.content-slider__item--houses {
+  background-image: url("/img/projects-promo-houses.jpg");
+}
+
+.content-slider__item--saunas {
+  background-image: url("/img/projects-promo-saunas.jpg");
+}
+
+.content-slider__item--projectsSmall {
+  // TOGO BG IMG
+  background-image: url("/img/projects-promo-saunas.jpg");
+}
+
+.content-slider__item--projects {
+  // TOGO BG IMG
+  background-image: url("/img/projects-promo-saunas.jpg");
+}
+
+.content-slider__item--projectsBig {
+  // TOGO BG IMG
+  background-image: url("/img/projects-promo-saunas.jpg");
 }
 
 .content-slider__text {

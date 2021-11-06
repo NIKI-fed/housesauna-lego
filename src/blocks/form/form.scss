@@ -1,0 +1,68 @@
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: $gap-2-mobile;
+  align-items: flex-start;
+}
+
+.form__label {
+  width: 100%;
+  position: relative;
+  padding-block-start: $gap-2-mobile;
+}
+
+.form__input {
+  display: block;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $base-white-alpha-9;
+  width: 100%;
+  max-width: 460px;
+  font-size: $text-mobile-font;
+  line-height: $text-mobile-line;
+  padding-inline-end: 10px;
+  padding-inline-start: 10px;
+  padding-block-end: 10px;
+  padding-block-start: 10px;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: .2s;
+  color: $base-white;
+  cursor: pointer;
+}
+
+.form__input:focus {
+  border-bottom: 1px solid $base-white;
+  outline: none;
+}
+
+.form__input:valid {
+  border-bottom: 1px solid $base-white;
+}
+
+.form__placeholder {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  color: $base-white-alpha-9;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: .2s;
+  pointer-events: none;
+}
+
+.form__placeholder--top {
+  top: 0;
+  font-size: .7em;
+}
+
+.form__input:focus ~ .form__placeholder {
+  top: 0;
+  font-size: .7em;
+  color: $base-white;
+}
+
+.form__submit {
+  color: $base-darker;
+}
