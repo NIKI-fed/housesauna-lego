@@ -8,6 +8,7 @@
   @media (min-width: $width-tablet-album) {
     height: 80px;
     order: 1;
+    padding-inline-end: 0;
   }
 }
 
@@ -22,6 +23,10 @@
   justify-content: center;
   color: transparent;
   margin-inline-end: 8px;
+}
+
+.social__item:last-child {
+  margin-inline-end: 0;
 }
 
 .social__item:hover,

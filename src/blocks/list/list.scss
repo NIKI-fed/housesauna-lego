@@ -6,6 +6,10 @@
   @media (min-width: $width-tablet) {
     padding-inline-start: $break-big;
   }
+
+  @media (min-width: $width-tablet-album) {
+    max-width: 740px;
+  }
 }
 
 .list--paddingLeft-small {
