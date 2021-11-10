@@ -16,6 +16,7 @@
   transition-property: all;
   transition-duration: .2s;
   transition-timing-function: ease-in-out;
+  cursor: pointer;
 }
 
 .button:hover,
@@ -38,12 +39,12 @@
 }
 
 .button--bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .button--big {
-    min-height: 60px;
-    min-width: 120px;
+  min-height: 60px;
+  min-width: 120px;
 }
 
 .button--alt {
