@@ -31,7 +31,7 @@ const toggleExtraElements = (elements, count) => {
 };
 
 const moreArticlesOnLoad = (article) => {
-  const elements = article.querySelectorAll(`.grid__element`);
+  const elements = article.querySelectorAll(`.preview`);
   if (elements.length >= VIEW_COUNT) {
     toggleExtraElements(elements, VIEW_COUNT);
     showMoreBtn(article, elements);
