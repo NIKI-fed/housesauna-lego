@@ -53,6 +53,11 @@
   border-bottom: 1px solid $base-white;
 }
 
+.form__input:valid ~ .form__placeholder {
+  top: 0;
+  font-size: .7em;
+}
+
 .form__input--dark {
   color: $base-dark;
   border-bottom: 1px solid $base-black-alpha-9;
