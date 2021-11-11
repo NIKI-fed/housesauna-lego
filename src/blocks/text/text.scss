@@ -138,6 +138,16 @@
   font-weight: bold;
 }
 
+.text--big{
+  font-size:$big-text-mobile-font;
+  line-height: $big-text-mobile-line;
+}
+
+.text--xbig{
+  font-size:$xbig-text-mobile-font;
+  line-height: $xbig-text-mobile-line;
+}
+
 .text--center-mobile {
   @media (min-width: $width-mobile-album) {
     text-align: left;
