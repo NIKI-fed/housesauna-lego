@@ -1,0 +1,5 @@
+<svg width="762" height="700" viewBox="0 0 762 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="153.538" y1="308.154" x2="348.154" y2="490.462" stroke="black" stroke-width="80" stroke-linecap="round"/>
+<line x1="721.742" y1="56.3533" x2="355.353" y2="492.999" stroke="black" stroke-width="80" stroke-linecap="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M173 30H527C558.389 30 587.416 40.1133 611 57.2593V21.7258C586.127 7.88461 557.484 0 527 0H173C77.4547 0 0 77.4547 0 173V527C0 622.545 77.4547 700 173 700H527C622.545 700 700 622.545 700 527V382H670V527C670 605.977 605.977 670 527 670H173C94.0233 670 30 605.977 30 527V173C30 94.0233 94.0233 30 173 30Z" fill="black"/>
+</svg>

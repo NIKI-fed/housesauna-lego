@@ -24,6 +24,10 @@
   counter-set: count;
 }
 
+.list--unordered {
+  list-style: none;
+}
+
 .list__item {
   position: relative;
 }
@@ -53,6 +57,23 @@
   justify-content: center;
   align-items: center;
 
+  @media (min-width: $width-tablet) {
+    padding-inline-end: 2px;
+  }
+}
+
+.list__item--unordered::before {
+  position: absolute;
+  content: "v";
+  width: 40px;
+  height: 40px;
+  left: -60px;
+  color: $base-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/checkmark.svg");
+  background-color: $base-black;
   @media (min-width: $width-tablet) {
     padding-inline-end: 2px;
   }

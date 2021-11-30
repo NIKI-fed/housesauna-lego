@@ -355,6 +355,7 @@
   width: 300px;
   margin-inline-start: $gap-2-mobile;
   margin-block-start:  $gap-mobile;
+  position: relative;
   }
 }
 
@@ -366,5 +367,6 @@
     width: 150px;
     height: 1px;
     background-color: $base-black;  
+    top: -7px;
   }
 }
