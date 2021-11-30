@@ -348,3 +348,23 @@
 .text__sup {
   font-size: .5em;
 }
+
+.text--float-right { 
+  @media (min-width: $width-tablet-album) {
+  float: right;
+  width: 300px;
+  margin-inline-start: $gap-2-mobile;
+  margin-block-start:  $gap-mobile;
+  }
+}
+
+.text--float-right::before {
+  @media (min-width: $width-tablet-album) {   
+    position: absolute;
+    color: $base-black;
+    content: "";
+    width: 150px;
+    height: 1px;
+    background-color: $base-black;  
+  }
+}
