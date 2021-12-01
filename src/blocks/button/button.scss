@@ -74,3 +74,11 @@
 .button--marginBottom-20 {
   margin-block-end: 20px;
 }
+
+.button--sm-text {
+  font-size: $sm-text-mobile-font;
+}
+
+.button--left{
+  justify-content: left;
+}

@@ -64,18 +64,21 @@
 
 .list__item--unordered::before {
   position: absolute;
-  content: "v";
+  content: "";
   width: 40px;
   height: 40px;
-  left: -60px;
+  left: -45px;
   color: $base-white;
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url("../img/checkmark.svg");
-  background-color: $base-black;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  
   @media (min-width: $width-tablet) {
     padding-inline-end: 2px;
+    left: -55px;
   }
 }
 
