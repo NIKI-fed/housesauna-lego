@@ -109,11 +109,23 @@
   gap: 20px;
 }
 
+.grid__article--gap-none{
+  gap: 0px;
+}
+
 .grid__element--marginBottom-medium {
   margin-block-end: 20px;
 
   @media (min-width: $width-tablet) {
     margin-block-end: 40px;
+  }
+}
+
+.grid__element--marginTop-medium {
+  margin-block-start: 20px;
+
+  @media (min-width: $width-tablet) {
+    margin-block-start: 40px;
   }
 }
 
