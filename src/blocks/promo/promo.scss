@@ -101,4 +101,13 @@
 
 .promo__buttons--left {
   align-self: flex-start;
+
+}
+
+.promo__buttons--marginTop-small {
+  margin-block-start: $gap-mobile;  
+
+  @media (min-width: $width-tablet) {
+    margin-block-start: $gap-tablet;
+  }
 }

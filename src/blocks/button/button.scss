@@ -75,6 +75,10 @@
   margin-block-end: 20px;
 }
 
+.button--toBottom {
+  justify-self: end;
+}
+
 .button--sm-text {
   font-size: $sm-text-mobile-font;
 }

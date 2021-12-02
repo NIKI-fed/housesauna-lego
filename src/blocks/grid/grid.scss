@@ -91,6 +91,13 @@
   }
 }
 
+.grid__article--four {
+
+  @media (min-width: $width-desktop) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 .grid__article--two {
 
   @media (min-width: $width-tablet) {
