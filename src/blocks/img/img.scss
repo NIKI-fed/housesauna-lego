@@ -14,7 +14,7 @@
   width: 280px;
   height: 280px;
   border-radius: 10px;
-  @media (min-width: $width-tablet-album) {
+  @media (min-width: $width-mobile-album) {
     width: 220px;
     height: 220px;
   }

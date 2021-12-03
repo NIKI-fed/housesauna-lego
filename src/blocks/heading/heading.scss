@@ -236,3 +236,11 @@
   font-weight: bold;
 }
 
+.heading--width220 {
+  display: block;
+  width: 280px;
+
+  @media (min-width: $width-table) {
+    width: 250px;
+  }
+}
