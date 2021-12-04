@@ -240,7 +240,7 @@
   display: block;
   width: 280px;
 
-  @media (min-width: $width-table) {
-    width: 250px;
+  @media (min-width: $width-tablet) {
+    width: 220px;
   }
 }
