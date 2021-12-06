@@ -19,6 +19,14 @@
   }
 }
 
+.list--paddingTop-none {
+  padding-block-start: 0px;
+}
+
+.list--paddingBottom-none {
+  padding-block-end: 0px;
+}
+
 .list--ordered {
   list-style: none;
   counter-set: count;
