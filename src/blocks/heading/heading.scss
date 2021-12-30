@@ -236,11 +236,11 @@
   font-weight: bold;
 }
 
-.heading--width220 {
+.heading__designpage--preview {
   display: block;
   width: 280px;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: $width-mobile-album) {
     width: 220px;
   }
 }

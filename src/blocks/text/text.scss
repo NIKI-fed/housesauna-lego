@@ -139,13 +139,16 @@
 }
 
 .text--big{
-  font-size:$big-text-mobile-font;
-  line-height: $big-text-mobile-line;
-}
+  @media (min-width: $width-mobile-album) {
+    font-size:$big-text-mobile-font;
+    line-height: $big-text-mobile-line;
+  }
 
-.text--xbig{
-  font-size:$xbig-text-mobile-font;
-  line-height: $xbig-text-mobile-line;
+  @media (min-width: $width-tablet-album) {
+    max-width: 740px;
+    font-size: $big-text-desktop-font;
+    line-height: $big-text-desktop-line;
+  }
 }
 
 .text--center-mobile {
