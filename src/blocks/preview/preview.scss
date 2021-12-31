@@ -8,6 +8,10 @@
   flex-direction: column;
 }
 
+.preview--height100 {
+  height: 100%;
+}
+
 .preview:hover,
 .preview:focus {
   transform: scale(1.01);

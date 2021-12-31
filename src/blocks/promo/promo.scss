@@ -48,6 +48,20 @@
   }
 }
 
+.promo--about {
+  //TODO: find image
+  background-image: url("../img/about-promo-team.jpg");
+}
+.promo--production {
+  //TODO: find image
+  background-image: url("../img/production-promo-brus.png");
+}
+
+.promo--design {
+  //TODO: find image
+  background-image: url("../img/design-promo-sketch.jpg");
+}
+
 .promo__heading {
   margin-block-end: $gap-3-mobile;
   
@@ -82,5 +96,18 @@
 
   @media (min-width: $width-tablet) {
     margin-block-start: $break-big;
+  }
+}
+
+.promo__buttons--left {
+  align-self: flex-start;
+
+}
+
+.promo__buttons--marginTop-small {
+  margin-block-start: $gap-mobile;  
+
+  @media (min-width: $width-tablet) {
+    margin-block-start: $gap-tablet;
   }
 }

@@ -10,6 +10,16 @@
   border-radius: 10px;
 }
 
+.img__design--preview {
+  width: 280px;
+  height: 280px;
+  border-radius: 10px;
+  @media (min-width: $width-mobile-album) {
+    width: 220px;
+    height: 220px;
+  }
+}
+
 .img__img--team {
   width: 200px;
   height: 200px;
