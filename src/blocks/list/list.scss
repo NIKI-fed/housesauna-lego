@@ -19,9 +19,21 @@
   }
 }
 
+.list--paddingTop-none {
+  padding-block-start: 0px;
+}
+
+.list--paddingBottom-none {
+  padding-block-end: 0px;
+}
+
 .list--ordered {
   list-style: none;
   counter-set: count;
+}
+
+.list--unordered {
+  list-style: none;
 }
 
 .list__item {
@@ -55,6 +67,26 @@
 
   @media (min-width: $width-tablet) {
     padding-inline-end: 2px;
+  }
+}
+
+.list__item--unordered::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  left: -45px;
+  color: $base-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/icons/checkmark.svg");
+  background-size: 40px;
+  background-repeat: no-repeat;
+  
+  @media (min-width: $width-tablet) {
+    padding-inline-end: 2px;
+    left: -55px;
   }
 }
 

@@ -138,6 +138,19 @@
   font-weight: bold;
 }
 
+.text--big{
+  @media (min-width: $width-mobile-album) {
+    font-size:$big-text-mobile-font;
+    line-height: $big-text-mobile-line;
+  }
+
+  @media (min-width: $width-tablet-album) {
+    max-width: 740px;
+    font-size: $big-text-desktop-font;
+    line-height: $big-text-desktop-line;
+  }
+}
+
 .text--center-mobile {
   @media (min-width: $width-mobile-album) {
     text-align: left;
@@ -337,4 +350,26 @@
 
 .text__sup {
   font-size: .5em;
+}
+
+.text--float-right { 
+  @media (min-width: $width-tablet-album) {
+  float: right;
+  width: 300px;
+  margin-inline-start: $gap-3-mobile;
+  margin-block-start:  $gap-mobile;
+  position: relative;
+  }
+}
+
+.text--float-right::before {
+  @media (min-width: $width-tablet-album) {   
+    position: absolute;
+    color: $base-black;
+    content: "";
+    width: 150px;
+    height: 1px;
+    background-color: $base-black;  
+    top: -7px;
+  }
 }

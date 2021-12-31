@@ -10,6 +10,24 @@
   border-radius: 10px;
 }
 
+<<<<<<< HEAD
+=======
+.img__design--preview {
+  width: 280px;
+  height: 280px;
+  border-radius: 10px;
+  @media (min-width: $width-mobile-album) {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+.img__img--team {
+  width: 200px;
+  height: 200px;
+}
+
+>>>>>>> 49955514602a780ff29ee6e0071e55d1bd477865
 .img--youtube {
   width: 228px;
   height: 160px;
