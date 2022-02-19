@@ -18,12 +18,12 @@
 .promo--half {
 
   @media (min-width: $width-tablet) {
-    min-height: calc(60vh - 80px);
+    min-height: calc(60vh - 120px);
     background-position: center;
   }
 
   @media (min-width: $width-tablet-album) {
-    min-height: calc(60vh - 80px);
+    min-height: 60vh;
       
   }
 }
