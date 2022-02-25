@@ -83,7 +83,11 @@ const tabSelect = (hash) => {
   exactTab.labels[0].click();
 }
 
-showSmallStructures();
+if (window.location.hash) {
+  tabSelect(window.location.hash);
+} else {
+  showSmallStructures();
+}
 
 const hashChanged = () => {
   if (window.location.hash) {
