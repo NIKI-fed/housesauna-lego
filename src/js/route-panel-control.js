@@ -64,6 +64,10 @@ function init () {
   
   var control = myMap.controls.get('routePanelControl');
 
+  control.options.set({
+    autofocus: false
+  });
+
   // Зададим состояние панели для построения машрутов.
   control.routePanel.state.set({
     // Тип маршрутизации.
@@ -73,7 +77,7 @@ function init () {
     // Адрес или координаты пункта отправления.
     to: 'Москва, МКАД, 25-й километр, вл4с1/6',
     // Включим возможность задавать пункт назначения в поле ввода.
-    framEnabled: true
+    fromEnabled: true,
     // Адрес или координаты пункта назначения.
     //to: 'Петербург'
   });
