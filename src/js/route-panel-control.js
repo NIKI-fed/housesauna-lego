@@ -96,3 +96,4 @@ function init () {
 }
 
 ymaps.ready(init);
+// window.mapsInit = init;
