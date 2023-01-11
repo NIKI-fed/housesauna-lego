@@ -1,5 +1,6 @@
 @font-face {
   font-family: 'lg';
+  // TODO relative path
   src: url('#{$lg-path-fonts}/lg.woff2?io9a6k') format('woff2'),
       url('#{$lg-path-fonts}/lg.ttf?io9a6k') format('truetype'),
       url('#{$lg-path-fonts}/lg.woff?io9a6k') format('woff'),
