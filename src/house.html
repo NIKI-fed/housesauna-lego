@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/style.min.css">
+  <!-- <link rel="stylesheet" href="/css/lightgallery.css" /> -->
   <title>ДомБаня - Типовой дом</title>
 </head>
 <body class="pageBody">
@@ -24,8 +25,14 @@
         <li class="mainNav__item mainNav__item--logo"><a href="/" class="mainNav__link"><img src="/img/logo.svg" alt="" class="logo"></a></li>
       </ul>
       <div class="social">
-        <a href="#TODO" class="social__item">
+        <a href="https://www.youtube.com/channel/UCoj58GpShlVhV-euDQdW_nQ" class="social__item">
           <svg class="social__icon social__icon--yt" width="20" height="20">
+            <use href="/img/sprite.svg#icon-youtube"></use>
+          </svg>
+        </a>
+        <a href="https://www.youtube.com/channel/UCoj58GpShlVhV-euDQdW_nQ" class="social__item">
+          YouTube
+          <svg class="social__icon social__icon--yt" width="20" height="20" alt="youtube logo">
             <use href="/img/sprite.svg#icon-youtube"></use>
           </svg>
         </a>
@@ -61,7 +68,7 @@
           <div class="grid grid--marginTop-0">
             <div class="grid__article grid__article--two grid__article--gap-big">
               <div class="grid__element">
-                <iframe class="quote__video" width="560" height="315" src="https://www.youtube.com/embed/6pfnpmIm1Fc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe loading="lazy" class="quote__video" width="560" height="315" src="https://www.youtube.com/embed/6pfnpmIm1Fc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
               <div class="grid__element">
                 <p class="text text--white text--left">Получите консультацию по этому дому</p>
@@ -84,13 +91,6 @@
               </div>
             </div>
           </div>
-          <!-- <div class="quote quote--house">
-            <div class="quote__videoWrapper">
-              <iframe class="quote__video" width="560" height="315" src="https://www.youtube.com/embed/6pfnpmIm1Fc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="quote__wrapper quote__wrapper--house">
-            </div>
-          </div> -->
       </article>
     </section>
 
@@ -136,20 +136,44 @@
       </article>
     </section>
 
-    <section class="gallery">
-      <img src="/img/projects/green-house-30/green-house-30-0.jpeg" alt="" class="gallery__img" data-img-index="0" tabindex="0">
-      <img src="/img/projects/green-house-30/green-house-30-1.jpeg" alt="" class="gallery__img" data-img-index="1" tabindex="0">
-      <img src="/img/projects/green-house-30/green-house-30-2.jpeg" alt="" class="gallery__img" data-img-index="2" tabindex="0">
-      <img src="/img/projects/green-house-30/green-house-30-3.jpeg" alt="" class="gallery__img" data-img-index="3" tabindex="0">
-      <img src="/img/projects/green-house-30/green-house-30-4.jpeg" alt="" class="gallery__img" data-img-index="4" tabindex="0">
-      <img src="/img/projects/green-house-30/green-house-30-5.jpeg" alt="" class="gallery__img" data-img-index="5" tabindex="0">
-      <img src="/img/projects/green-house-30/green-house-30-6.jpeg" alt="" class="gallery__img" data-img-index="6" tabindex="0">
-      <img src="/img/projects/green-house-30/green-house-30-7.jpeg" alt="" class="gallery__img" data-img-index="7" tabindex="0">
-      <img src="/img/projects/green-house-30/green-house-30-8.jpeg" alt="" class="gallery__img" data-img-index="8" tabindex="0">
-      <img src="/img/projects/green-house-30/green-house-30-9.jpeg" alt="" class="gallery__img" data-img-index="9" tabindex="0">
-      <img src="/img/projects/green-house-30/green-house-30-10.jpeg" alt="" class="gallery__img" data-img-index="10" tabindex="0">
-      <img src="/img/projects/green-house-30/green-house-30-11.jpeg" alt="" class="gallery__img" data-img-index="11" tabindex="0">
-    </section>
+    <section class="gallery" id="lightgallery">
+      <a class="gallery__link" href="/img/projects/green-house-30/green-house-30-0.jpeg">
+          <img loading="lazy" alt="img1" src="/img/projects/green-house-30/green-house-30-0.jpeg" class="gallery__img" data-img-index="0" tabindex="0" />
+      </a>
+      <a class="gallery__link" href="/img/projects/green-house-30/green-house-30-1.jpeg">
+          <img loading="lazy" alt="img2" src="/img/projects/green-house-30/green-house-30-1.jpeg" class="gallery__img" data-img-index="0" tabindex="0" />
+      </a>
+      <a class="gallery__link" href="/img/projects/green-house-30/green-house-30-2.jpeg">
+          <img loading="lazy" alt="img2" src="/img/projects/green-house-30/green-house-30-2.jpeg" class="gallery__img" data-img-index="0" tabindex="0" />
+      </a>
+      <a class="gallery__link" href="/img/projects/green-house-30/green-house-30-3.jpeg">
+          <img loading="lazy" alt="img2" src="/img/projects/green-house-30/green-house-30-3.jpeg" class="gallery__img" data-img-index="0" tabindex="0" />
+      </a>
+      <a class="gallery__link" href="/img/projects/green-house-30/green-house-30-4.jpeg">
+          <img loading="lazy" alt="img2" src="/img/projects/green-house-30/green-house-30-4.jpeg" class="gallery__img" data-img-index="0" tabindex="0" />
+      </a>
+      <a class="gallery__link" href="/img/projects/green-house-30/green-house-30-5.jpeg">
+          <img loading="lazy" alt="img2" src="/img/projects/green-house-30/green-house-30-5.jpeg" class="gallery__img" data-img-index="0" tabindex="0" />
+      </a>
+      <a class="gallery__link" href="/img/projects/green-house-30/green-house-30-6.jpeg">
+          <img loading="lazy" alt="img2" src="/img/projects/green-house-30/green-house-30-6.jpeg" class="gallery__img" data-img-index="0" tabindex="0" />
+      </a>
+      <a class="gallery__link" href="/img/projects/green-house-30/green-house-30-7.jpeg">
+          <img loading="lazy" alt="img2" src="/img/projects/green-house-30/green-house-30-7.jpeg" class="gallery__img" data-img-index="0" tabindex="0" />
+      </a>
+      <a class="gallery__link" href="/img/projects/combi-house-130/combi-house-130-4.jpeg">
+          <img loading="lazy" alt="img2" src="/img/projects/combi-house-130/combi-house-130-4.jpeg" class="gallery__img" data-img-index="0" tabindex="0" />
+      </a>
+      <a class="gallery__link" href="/img/projects/combi-house-130/combi-house-130-5.jpeg">
+          <img loading="lazy" alt="img2" src="/img/projects/combi-house-130/combi-house-130-5.jpeg" class="gallery__img" data-img-index="0" tabindex="0" />
+      </a>
+      <a class="gallery__link" href="/img/projects/combi-house-130/combi-house-130-6.jpeg">
+          <img loading="lazy" alt="img2" src="/img/projects/combi-house-130/combi-house-130-6.jpeg" class="gallery__img" data-img-index="0" tabindex="0" />
+      </a>
+      <a class="gallery__link" href="/img/projects/combi-house-130/combi-house-130-15.jpeg">
+          <img loading="lazy" alt="img2" src="/img/projects/combi-house-130/combi-house-130-15.jpeg" class="gallery__img" data-img-index="0" tabindex="0" />
+      </a>
+  </section>
   </main>
 
   <div class="overlay"></div>
@@ -195,7 +219,16 @@
   </footer>
 
   <script src="/js/burger/burger.js"></script>
-  <script src="/js/gallery/gallery.js"></script>
   <script src="/js/form/form.js"></script>
+  <script src="/js/lightgallery/lightgallery.js"></script>
+  <script src="/js/lightgallery/lg-thumbnail.js"></script>
+  <script type="text/javascript">
+    lightGallery(document.getElementById('lightgallery'), {
+        plugins: [lgThumbnail],
+        thumbnail: true,
+        licenseKey: 'your_license_key',
+        speed: 500,
+    });
+</script>
 </body>
 </html>

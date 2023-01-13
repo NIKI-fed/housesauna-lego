@@ -24,8 +24,18 @@
   }
 }
 
+.gallery__link {
+  
+}
+
+// .lg-thumb-img {
+//   max-width: 100px;
+//   max-height: 80px;
+// }
+
 .gallery__img {
   width: 100%;
+  display: block;
   height: auto;
   object-fit: cover;
   aspect-ratio: 4 / 3;

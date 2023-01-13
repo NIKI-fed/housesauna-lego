@@ -90,7 +90,7 @@ const createSprite = () => {
 
 const copyFonts = () =>{
   return src([
-    'fonts/**/*.{woff,woff2}',
+    'fonts/**/*.{woff,woff2,ttf}',
   ], {
     base: 'src'
   })

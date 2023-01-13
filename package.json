@@ -27,6 +27,7 @@
     "eslint": "6.8.0",
     "gulp-better-rollup": "4.0.1",
     "gulp-sourcemaps": "2.6.5",
+    "lightgallery": "^2.7.0",
     "rollup": "1.16.7"
   }
 }
