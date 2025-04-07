@@ -46,6 +46,19 @@
   }
 }
 
+.mainNav__listSub {
+  position: absolute;
+  top: 40%;
+  list-style: none;
+  padding-inline-start: 0;
+  background-color: $base-black-alpha-9;
+  display: none;
+}
+
+.mainNav__listSub--visible {
+  display: block;
+}
+
 .mainNav__link {
   color: $base-white;
   text-decoration: none;
@@ -53,6 +66,7 @@
   padding-block-end: 5px;
   padding-block-start: 5px;
   display: block;
+  cursor: pointer;
 
   @media (min-width: $width-tablet-album) {
     font-size: $sm-text-mobile-font;
@@ -69,6 +83,21 @@
 .mainNav__link:hover,
 .mainNav__link:focus {
   color: $base-white-alpha;
+}
+
+.mainNav__link--sub {
+  padding-inline: 12px;
+
+  @media (min-width: $width-tablet-album) {
+    padding-block: 10px;
+    padding-inline: 20px;
+  }
+}
+
+.mainNav__link--sub:hover,
+.mainNav__link--sub:focus {
+  color: $base-white;
+  background-color: $base-white-alpha-33;
 }
 
 .mainNav__item--logo {

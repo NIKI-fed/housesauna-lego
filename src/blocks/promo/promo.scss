@@ -91,6 +91,8 @@
 
 .promo__buttons {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: $gap-3-mobile;
   margin-block-start: $gap-2-mobile;  
 
