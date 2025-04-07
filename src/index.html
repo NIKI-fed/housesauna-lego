@@ -20,7 +20,23 @@
         <li class="mainNav__item"><a href="/about.html" class="mainNav__link">О нас</a></li>
         <li class="mainNav__item"><a href="/production.html" class="mainNav__link">Производство</a></li>
         <li class="mainNav__item"><a href="/design.html" class="mainNav__link">Проектирование</a></li>
-        <li class="mainNav__item"><a href="/houses.html" class="mainNav__link">Проекты</a></li>
+        <!-- <li class="mainNav__item"><a href="/houses.html" class="mainNav__link">Проекты</a></li> -->
+
+        <li class="mainNav__item mainNav__item--sub">
+          <span class="mainNav__link">Проекты</span>
+          <ul class="mainNav__listSub">
+            <li class="mainNav__item">
+              <a href="/projects/houses-categories/" class="mainNav__link mainNav__link--sub">Дома</a>
+            </li>
+            <li class="mainNav__item">
+              <a href="/projects/saunas-categories/" class="mainNav__link mainNav__link--sub">Бани</a>
+            </li>
+            <li class="mainNav__item">
+              <a href="/projects/" class="mainNav__link mainNav__link--sub">Проекты</a>
+            </li>
+          </ul>
+        </li>
+
         <li class="mainNav__item mainNav__item--logo"><a href="/" class="mainNav__link"><img src="/img/logo.svg" alt="" class="logo"></a></li>
       </ul>
       <div class="social">
@@ -350,6 +366,7 @@
   </footer>
 
   <script src="/js/burger/burger.js"></script>
+  <script src="/js/mainNav/mainNav.js"></script>
   <script src="/js/content-slider/content-slider.js"></script>
 </body>
 </html>
