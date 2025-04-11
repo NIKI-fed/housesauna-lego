@@ -48,11 +48,15 @@
 
 .mainNav__listSub {
   position: absolute;
-  top: 40%;
+  top: 218px;
   list-style: none;
   padding-inline-start: 0;
   background-color: $base-black-alpha-9;
   display: none;
+
+  @media (min-width: $width-tablet-album) {
+    top: 40%;
+  }
 }
 
 .mainNav__listSub--visible {
