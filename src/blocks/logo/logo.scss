@@ -1,7 +1,9 @@
 .logo {
+  width: 120px;
+  height: 47px;
   
   @media (min-width: $width-tablet-album) {
-    width: 150px;
+    width: 120px;
     height: 47px;
   }
 }
