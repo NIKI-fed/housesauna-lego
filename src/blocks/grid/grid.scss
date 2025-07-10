@@ -135,6 +135,14 @@
   }
 }
 
+.grid__element--marginTop-big {
+  margin-block-start: 80px;
+
+  @media (min-width: $width-tablet) {
+    margin-block-start: 100px;
+  }
+}
+
 .grid__element--wide {
   grid-column-start: 1;
   grid-column-end: -1;
