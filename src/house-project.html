@@ -76,7 +76,7 @@
           <h2 class="heading heading--h2 heading--paddingTop-50">Хочу такой дом</h2>
           <form action="/submit" class="form form--wide" method="POST">
             <label for="" class="form__label">
-              <input type="email" class="form__input form__input--dark" required>
+              <input placeholder="example@example.ru" type="email" class="form__input form__input--dark form__input--email" required>
               <span class="form__placeholder form__placeholder--dark">Ваш email</span>
             </label>
             <label for="" class="form__label">
@@ -84,7 +84,7 @@
               <span class="form__placeholder form__placeholder--dark">Ваше имя</span>
             </label>
             <label for="" class="form__label">
-              <input type="tel" class="form__input form__input--dark" required>
+              <input placeholder="(ххх) xxx-xx-xx" maxlength="15" type="tel" class="form__input form__input--dark form__input--phone" required>
               <span class="form__placeholder form__placeholder--dark">Ваш телефон</span>
             </label>
             <button class="form__submit form__submit--dark form__submit--wide form__submit--center button button--big">Позвоните мне</button>
